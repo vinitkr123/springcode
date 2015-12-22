@@ -23,7 +23,7 @@ public class MainApp {
 		((AbstractApplicationContext) context).registerShutdownHook();
 		System.out.println("Hello from Object 1 "+helloWorld.getMessage());
 		//System.out.println("Hello from Object 2 "+hello.getMessage());	
-		//System.out.println("Hello from Object 2 "+hello.getMessage());	
+		System.out.println("Hello from Object 2 "+hello.getMessage());	
 	
 		InitDestroyBean initDestroyBean = (InitDestroyBean)context.getBean("initBean");
 		initDestroyBean.afterPropertiesSet();
