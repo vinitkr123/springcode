@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" 
+   default-init-method="nit" default-destroy-method="destroy">
+    
+    <bean id ="hello" class="com.scjp.HelloWorld" scope="prototype">
+    	<!-- <property name ="message" value ="Hi Hello World" ></property> -->
+    </bean>
+    
+    <bean id = "initBean" class = "com.scjp.InitDestroyBean"  >
+    
+    </bean>
+    </beans>
